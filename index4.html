@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+	html{
+		background:url("images/pexels-pixabay-267202.jpg")no-repeat center center fixed;
+		-moz-background-size:cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover
+		}
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=back] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=back]:hover {
+  background-color: #45a049;
+}
+
+.button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7aa8b7;
+        border-radius: 6px;
+        outline: none;
+      }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Purchase Form</h3>
+
+<div>
+  <form>
+    <label for="fname">Customer Name</label>
+    <input type="text" id="cname" name="custname" placeholder="Your name..">
+
+    <p>Please select product type :</p>
+      <input type="radio" id="x" name="product" value="cbw">
+      <label for="x">Checkered Black & White</label><br>
+	  
+      <input type="radio" id="y" name="product" value="ow">
+      <label for="y">Off White</label><br>
+	  
+      <input type="radio" id="z" name="product" value="co">
+      <label for="z">Casual Cotton On</label><br>
+	  
+	  <input type="radio" id="r" name="product" value="bl">
+      <label for="r">Brownish Leather</label><br>
+	  
+	  <input type="radio" id="p" name="product" value="bb">
+      <label for="p">Blue Black Bold</label><br></br>
+
+
+   <label for="type">Choose your size</label>
+    <select id="type" name="type">
+      <option value="a">6</option>
+      <option value="b">7</option>
+      <option value="c">8</option>
+	  <option value="d">9</option>
+	  <option value="e">10</option>
+	  <option value="f">11</option>
+	  <option value="g">12</option>
+	  <option value="h">13</option>
+     </select><br></br>
+	
+	
+	 <label for="qty">Quantity</label>
+    <select id="qty" name="qty">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	  <option value="6">6</option>
+	  <option value="7">7</option>
+	  <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+	  
+    </select><br></br>
+	
+    <label for="colour">Enter your Address for delivery purpose:</label><br>
+    <input type="text" id="addr" name="address" placeholder=""><br></br>
+	
+
+ <a class="button" href="index3.html" onclick="myFunction()">Submit</a>
+
+  <script>
+  function myFunction() {
+  alert("Order successful!Please proceed with payment");
+  }
+  </script>
+	
+ <a class="button" href="index.html" ">Back</a>
+	
+  </form>
+</div>
+
+</body>
+</html>

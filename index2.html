@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Form</title>
+<style>
+.header {
+         padding: 60px;
+         text-align: center;
+         background:url("images/background CF.jpg")no-repeat top center;
+		 background-size:cover;
+		 height:auto;
+         color: white;
+         font-size: 30px;  /* Header/Logo Title */
+        }
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7C3F7B;
+        border-radius: 6px;
+        outline: none;
+      }
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1><center>SHOEZ<center></h1>
+  <center><img src="images/shoez.png" width="500" length ="100"></center>
+  <h2><center>"Welcome to your go-to destination for on-trend shoes"<center></h2>
+  <p></p>
+  </div>
+
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form>
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="pnumber">Phone Number</label>
+    <input type="text" id="pnum" name="pnumber" value="+06" placeholder="Your Phone Number">
+	
+	  <label for="email">Email</label>
+    <input type="text" id="lname" name="email" placeholder="Your email">
+	
+
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject">
+      <option value="feedback">Feedback</option>
+      <option value="suggestion">Suggestion</option>
+      <option value="complaint">Complaint</option>
+	  <option value="others">Others</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+	<p>What do you like Shoez to improve in future ?</p>
+	 
+	<input type="checkbox" id="promo" name="promo" value="Promo">
+    <label for="promo">Make promotions more often</label><br>
+    <input type="checkbox" id="size" name="size" value="Size">
+    <label for="size"> Increase size available for each product </label><br>
+    <input type="checkbox" id="variety" name="variety" value="Variety">
+    <label for="variety"> Add more variety of products</label><br></br>
+
+  
+  <a class="button" href="#" onclick="myFunction()">Submit</a>
+
+  <script>
+  function myFunction() {
+  alert("Your message succesfully delivered!");
+  }
+  </script>
+  
+  <a class="button" href="index.html">Home</a>
+  
+  
+  </form>
+</div>
+
+</body>
+</html>

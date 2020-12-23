@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+
+<style>
+.header {
+         padding: 60px;
+         text-align: center;
+         background: url("images/pexels-leah-kelley-2090645.jpg")no-repeat center center fixed;
+		 -moz-background-size:cover;
+		 -webkit-background-size: cover;
+		 -o-background-size: cover;
+		 background-size: cover
+         color: white;
+         font-size: 30px;  /* Header/Logo Title */
+        }
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7C3F7B;
+        border-radius: 6px;
+        outline: none;
+      }
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1><center>SHOEZ<center></h1>
+  <center><img src="images/shoez.png" width="500" length ="100"></center>
+  <h2><center>"Welcome to your go-to destination for on-trend shoes"<center></h2>
+  <p></p>
+  </div>
+
+
+<h3>Payment Confirmation</h3>
+
+<div class="container">
+  <form>
+  
+    <label for="cname">Customer Name</label>
+    <input type="text" id="cname" name="custname" placeholder="Your name..">
+    
+	<label for="onum">Order Name</label>
+    <input type="text" id="onum" name="onumber" placeholder="eg: Off White">
+	
+	<label for="dpay">Date Of Payment:</label>
+    <input type="date" id="dpay" name="dpay"><br></br>
+
+  
+    <label for="subject">Payment Method</label>
+    <select id="payment" name="payment">
+      <option value="ob">Online Banking</option>
+      <option value="pp">Paypal</option>
+      <option value="at">ATM Transfer</option>
+    </select>
+	
+	 <label for="total">Total Payment (RM)</label>
+    <input type="text" id="total" name="total" placeholder="">
+	
+	  <label for="subject">Payment To</label>
+    <select id="subject" name="subject">
+      <option value="feedback">MAYBANK  - 1520 4056 1912 </option>
+      <option value="complaint">Please Select</option>
+    </select>
+
+    <label for="remark">Remark</label>
+    <textarea id="remark" name="remark" placeholder="Write something.." style="height:200px"></textarea>
+
+  <a class="button" href="#" onclick="myFunction()">Confirm</a>
+
+  <script>
+  function myFunction() {
+  alert("Purchase successful!Have a nice day .");
+  }
+  </script>
+  
+  <a class="button" href="index.html">Home</a>
+  
+  
+  </form>
+</div>
+
+</body>
+</html>
